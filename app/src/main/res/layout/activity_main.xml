@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rate this Lesson:"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/rad_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXCELLENT">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rad_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GOOD">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rad_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OKAY">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rad_fourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POOR">
+
+        </RadioButton>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Give Your Opinion Here"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/check_first"
+        style="@style/checkboxes"
+        android:text="I really enjoy this lesson">
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/check_second"
+        style="@style/checkboxes"
+        android:text="I will prefer this lesson to else also">
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/check_third"
+        style="@style/checkboxes"
+        android:text="I would like to hear more from you">
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/check_fourth"
+        style="@style/checkboxes"
+        android:text="I am satisfied with the content and full description">
+    </CheckBox>
+
+    <Button
+        android:id="@+id/btn_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:layout_gravity="center">
+    </Button>
+
+</LinearLayout>
